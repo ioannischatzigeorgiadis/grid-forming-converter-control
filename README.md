@@ -8,7 +8,7 @@ This project investigates the dynamic behavior, control, and current limitation 
 
 The study focuses on maintaining stable converter operation during grid faults while respecting converter current limits. Particular emphasis is placed on positive and negative sequence control, the coordination of current limiting strategies, and the trade-offs between voltage support, current protection, and dynamic performance.
 
-The control system was developed and evaluated through simulations in PLECS, with MATLAB used for processing, visualization, and comparative analysis of simulation results.
+The control system was developed and evaluated through simulations in PLECS, with MATLAB used for processing and visualization.
 
 ## Research Objectives
 
@@ -52,7 +52,6 @@ Allocates available converter current capacity according to predefined prioritie
 
 - Positive sequence priority
 - Negative sequence priority
-- d-axis priority
 
 The effects of priority selection on current allocation and control performance are examined.
 
@@ -72,7 +71,6 @@ The converter is evaluated under several grid disturbances:
 - Two-phase voltage sags
 - Three-phase symmetrical voltage sags
 - Single-phase voltage phase jumps
-- Combined grid disturbances
 
 The simulation results are analyzed in terms of:
 
@@ -104,14 +102,11 @@ grid-forming-converter-control/
 │   ├── [System parameters script]
 │   └── [Simulation results processing scripts]
 │
-├── figures/                  (to be added)
-│   └── [Selected simulation results]
-│
-└── thesis/                   (to be added)
+└── thesis/
     └── [Diploma thesis PDF]
 ```
 
-The PLECS model implements the converter and its control system, while the MATLAB scripts support parameter initialization, simulation data processing, and visualization.
+The PLECS model implements the converter and its control system, while the MATLAB scripts support simulation data processing and visualization.
 
 ## Requirements
 
@@ -124,19 +119,13 @@ Software compatibility may depend on the versions and toolboxes installed.
 
 ## Running the Simulations
 
-### Step 1 — Initialize System Parameters
-
-Open MATLAB and run the system parameter initialization script provided in the `matlab/` directory.
-
-This script defines the electrical system parameters, converter characteristics, control parameters, and relevant simulation settings.
-
-### Step 2 — Open the PLECS Model
+### Step 1 — Open the PLECS Model
 
 Open the provided `.plecs` model using PLECS Standalone.
 
-Ensure that all required model parameters are available and that the model is configured for the intended simulation scenario.
+Ensure that that the model is configured for the intended simulation scenario.
 
-### Step 3 — Configure the Grid Disturbance
+### Step 2 — Configure the Grid Disturbance
 
 Select the disturbance scenario to be investigated, such as:
 
@@ -147,7 +136,7 @@ Select the disturbance scenario to be investigated, such as:
 
 The converter response can then be evaluated under the selected operating conditions and current limitation strategy.
 
-### Step 4 — Run the Simulation
+### Step 3 — Run the Simulation
 
 Execute the simulation in PLECS and examine the converter response, including PCC voltages, converter currents, and positive and negative sequence quantities.
 
@@ -168,19 +157,6 @@ The simulation framework is designed to investigate:
 - Negative sequence dq currents
 - Transient response under grid disturbances
 - Performance of the implemented current limitation strategies
-
-## Future Additions
-
-The repository will be expanded with:
-
-- Selected simulation plots and comparative results
-- Additional documentation for reproducibility
-- The completed diploma thesis, subject to publication permissions
-
-
-## Documentation and Results
-
-Selected simulation figures, implementation files, and technical documentation will be added progressively.
 
 ## Author
 
