@@ -90,12 +90,93 @@ The simulation results are analyzed in terms of:
 
 ## Repository Structure
 
-The repository is intended to contain the following material as it becomes available:
+The repository contains the PLECS simulation model and MATLAB scripts developed for the implementation and analysis of the grid forming converter control system.
 
-- `models/` — PLECS simulation models
-- `matlab/` — MATLAB scripts for data processing and visualization
-- `figures/` — Selected simulation results and technical diagrams
-- `thesis/` — Diploma thesis document, subject to publication permissions
+```text
+grid-forming-converter-control/
+│
+├── README.md
+│
+├── models/
+│   └── [PLECS simulation model]
+│
+├── matlab/
+│   ├── [System parameters script]
+│   └── [Simulation results processing scripts]
+│
+├── figures/                  (to be added)
+│   └── [Selected simulation results]
+│
+└── thesis/                   (to be added)
+    └── [Diploma thesis PDF]
+```
+
+The PLECS model implements the converter and its control system, while the MATLAB scripts support parameter initialization, simulation data processing, and visualization.
+
+## Requirements
+
+The project uses the following software:
+
+- **PLECS Standalone:** For running the converter simulations and analyzing the control system.
+- **MATLAB:** For parameter initialization, processing exported simulation data, and generating figures.
+
+Software compatibility may depend on the versions and toolboxes installed.
+
+## Running the Simulations
+
+### Step 1 — Initialize System Parameters
+
+Open MATLAB and run the system parameter initialization script provided in the `matlab/` directory.
+
+This script defines the electrical system parameters, converter characteristics, control parameters, and relevant simulation settings.
+
+### Step 2 — Open the PLECS Model
+
+Open the provided `.plecs` model using PLECS Standalone.
+
+Ensure that all required model parameters are available and that the model is configured for the intended simulation scenario.
+
+### Step 3 — Configure the Grid Disturbance
+
+Select the disturbance scenario to be investigated, such as:
+
+- Single-phase voltage sag
+- Two-phase voltage sag
+- Three-phase voltage sag
+- Voltage phase jump
+
+The converter response can then be evaluated under the selected operating conditions and current limitation strategy.
+
+### Step 4 — Run the Simulation
+
+Execute the simulation in PLECS and examine the converter response, including PCC voltages, converter currents, and positive and negative sequence quantities.
+
+### Step 5 — Process the Results in MATLAB
+
+Export the required simulation signals and use the corresponding MATLAB scripts to process the results and generate comparative plots.
+
+Some plotting scripts may require specific CSV filenames or directory structures. Their input requirements should be checked before execution.
+
+## Simulation Outputs
+
+The simulation framework is designed to investigate:
+
+- Three-phase PCC voltages
+- Three-phase converter currents
+- Positive sequence active and reactive power
+- Positive sequence dq currents
+- Negative sequence dq currents
+- Transient response under grid disturbances
+- Performance of the implemented current limitation strategies
+
+## Future Additions
+
+The repository will be expanded with:
+
+- Selected simulation plots and comparative results
+- Additional documentation for reproducibility
+- The completed diploma thesis, subject to publication permissions
+
 
 ## Documentation and Results
 
