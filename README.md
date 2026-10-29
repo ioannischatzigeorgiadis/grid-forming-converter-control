@@ -10,6 +10,10 @@ The study focuses on maintaining stable converter operation during grid faults w
 
 The control system was developed and evaluated through simulations in PLECS, with MATLAB used for processing and visualization.
 
+The complete diploma thesis provides a detailed presentation of the converter modeling, control architecture, current limitation strategies, simulation scenarios, and analysis of results.
+
+**[Read the Full Diploma Thesis (PDF)](main/DIPLOMA_IOANNIS_FINAL.pdf)**
+
 ## Research Objectives
 
 - Develop and simulate a three-phase GFM converter with positive and negative sequence control.
