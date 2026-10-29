@@ -106,8 +106,7 @@ grid-forming-converter-control/
 │   ├── [System parameters script]
 │   └── [Simulation results processing scripts]
 │
-└── thesis/
-    └── [Diploma thesis PDF]
+└──[Diploma thesis PDF]
 ```
 
 The PLECS model implements the converter and its control system, while the MATLAB scripts support simulation data processing and visualization.
