@@ -12,7 +12,7 @@ The control system was developed and evaluated through simulations in PLECS, wit
 
 The complete diploma thesis provides a detailed presentation of the converter modeling, control architecture, current limitation strategies, simulation scenarios, and analysis of results.
 
-**[Read the Full Diploma Thesis (PDF)](main/DIPLOMA_IOANNIS_FINAL.pdf)**
+**[Read the Full Diploma Thesis (PDF)](DIPLOMA_IOANNIS_FINAL.pdf)**
 
 ## Research Objectives
 
